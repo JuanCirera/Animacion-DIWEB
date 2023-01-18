@@ -3,28 +3,16 @@ body{
   background-color: #181A1B;
 }
 
-main{
-  margin-top: 5%;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  height: 900px;
-  border-left: 4px solid #2F3335;
-  border-right: 4px solid #2F3335;
-}
-
 div {
 
   /* Formato del div */
   width: 300px;
   height: 100px;
   border-radius: 10px;
-  position: absolute;
-  left: 800px; 
-  right: 0; 
   top: 200px;
   margin-left: auto;
   margin-right: auto; 
+  margin-top: 10%;
   color: white;
   font-weight: bold;
   text-align: center;
@@ -32,8 +20,11 @@ div {
   /* Animacion */
   animation-name: animacion;
   animation-duration: 3s;
+  /* Se reproduce al reves */
   animation-direction: alternate;
+  /* Bucle infinito */
   animation-iteration-count: infinite;
+  /* Controla si es lineal o cambia de estado de golpe */
   animation-timing-function: linear;
     
 }
@@ -49,17 +40,11 @@ div {
   50% {
     background-color: yellowgreen;
     width: 150px;
-    top: 400px;
-    left: 0;
-    right: 850px;
     font-size: 3em;
   }
   to {
     background-color: #0B2259;
     width: 50px;
-    top: 600px;
-    left: 950px;
-    right: 0px;
     font-size: 3em;
   } 
 
